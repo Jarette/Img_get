@@ -1,3 +1,25 @@
+/*****************************************************************************
+*                    
+*  Author:           Jarette Greene
+*  Email:            jkgreene0406@my.msutexas.edu / jarettegreene09@gmail.com
+*  Label:            P03
+*  Title:			 Image Ascii Art           
+*  Course:           CMPS 4143
+*  Semester:         Fall 2023
+* 
+*  Description:
+*	
+*		This Package contains functions that allow the user to enter a URL 
+*		and download an image to thier system.
+*
+* 
+*  Usage:
+*    - import to main.go file 
+* 
+*  Files           
+*       N/A 
+*****************************************************************************/
+
 package Img_get
 
 import (
@@ -41,6 +63,6 @@ func Getpic(url string) {
 		fmt.Println("Error saving the image:", err)
 		return
 	}
-
+	// final message to say that the image was saved 
 	fmt.Println("Image downloaded and saved as 'downloaded_image.jpg'")
 }
